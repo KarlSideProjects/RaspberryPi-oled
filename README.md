@@ -1,5 +1,7 @@
 # RaspberryPi-oled
 
+> **授權：僅限非商業用途，歡迎研究、教學與交流。** 完整條款見 [LICENSE](LICENSE)，適用範圍與第三方例外見 [授權規範](LICENSING.md)。
+
 讓沒有接螢幕的 Raspberry Pi，也能直接在機身旁查看 Wi-Fi IP、記憶體與溫度。這是一個 Python 搭配 SH1106 SPI OLED 的小型硬體實作，適合放在桌面或實驗設備旁，減少為了確認主機狀態而登入終端機的步驟。
 
 目前可查看下方既有實機照片，並在相符的 Raspberry Pi 與 OLED 上執行 [app.py](app.py)。儲存庫另保留一份獨立的 MicroPython 顯示測試；兩者的執行環境不同。
@@ -64,4 +66,4 @@ Linux 網路資訊 + psutil → 整理文字行 → luma canvas → SPI → SH11
 - 既有 [接線圖](content/spi.jpg) 與 [實機照片](content/spi-oled.jpg) 提供作品外觀與畫面的證據，不代表所有板型都已通過測試。
 - 2026-09-16 文件整理時逐一核對三份 Python 原始碼、圖片與操作路徑，並做 Python 語法解析；未連接實機重跑。儲存庫目前沒有依賴鎖檔、自動測試或 CI 工作流程。
 - 初始程式提交 `cb53fd5` 的作者紀錄為 Jhih-Wei Jhan；其中 [sh1106.py](sh1106.py) 明列第三方作者 Radomir Dopieralski、Robert Hammelrath、Tim Weber 與 MIT 授權全文。這份驅動不是本專案的原創成果；Pi 主程式使用的則是 luma.oled 的驅動。
-- 原 README 的 MIT 徽章未附全庫 LICENSE。目前只能確認 `sh1106.py` 的 MIT 聲明，不能據此宣稱所有程式與圖片都獲得同一授權。既有圖片未附獨立來源／授權說明；重用時須另行確認。
+- 專案自有內容依 [非商用研究授權](LICENSE) 發行；`sh1106.py` 的 MIT 聲明仍獨立有效。歷史 MIT 徽章及來源未確認圖片的界線見 [LICENSING.md](LICENSING.md)，本次不撤回已有效取得的舊版權利。
